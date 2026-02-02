@@ -105,7 +105,7 @@ Training BPD steadily decreases, demonstrating stable convergence of the autoreg
 Validation BPD closely follows training trends, indicating good generalization.
 
 <p align="center">
-  <img src="images/val_avg_BPD.png" width="650">
+  <img src="val_avg_BPD.png" width="650">
 </p>
 
 ---
