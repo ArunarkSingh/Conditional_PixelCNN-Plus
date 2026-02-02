@@ -80,6 +80,29 @@ Increasing the number of filters significantly improved feature expressiveness a
 
 The **FiLM-based Early + Middle Fusion (Configuration B)** achieved the best overall results, demonstrating the importance of strong conditioning and higher model capacity.
 
+## Training and Evaluation Curves
+
+### Fréchet Inception Distance (FID)
+Lower FID indicates higher-quality generated images.  
+The final FiLM-based model achieves the lowest FID score.
+
+![FID Curve](FID.png)
+
+---
+
+### Validation Average Bits-Per-Dimension (BPD)
+Validation BPD steadily decreases, indicating improved likelihood estimation and generalization.
+
+![Validation BPD](val_avg_BPD.png)
+
+---
+
+### Training Average Bits-Per-Dimension (BPD)
+Training BPD shows stable convergence over the training period.
+
+![Training BPD](images/train_avg_BPD.png)
+
+
 ---
 
 ## Evaluation
