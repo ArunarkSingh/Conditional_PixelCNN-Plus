@@ -31,9 +31,7 @@ This work was completed as the final project for **CPEN 455 (Deep Learning)**.
 
 The conditional PixelCNN++ models the distribution:
 
-\[
-p(x \mid c) = \prod_i p(x_i \mid x_{<i}, c)
-\]
+p(x | c) = ∏ p(x_i | x_<i, c)
 
 where \( c \) is a learned class condition.
 
@@ -50,9 +48,7 @@ I evaluated multiple conditioning strategies:
 3. **Early + FiLM-Based Middle Fusion (Final Model)**  
    Conditional signal injected using **FiLM modulation**, learning per-channel scaling (γ) and shifting (β):
 
-\[
-\text{FiLM}(h) = \gamma(c) \cdot h + \beta(c)
-\]
+FiLM(h) = γ(c) · h + β(c)
 
 This configuration yielded the strongest generative and classification performance.
 
