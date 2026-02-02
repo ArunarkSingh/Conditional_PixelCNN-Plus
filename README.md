@@ -84,24 +84,38 @@ The **FiLM-based Early + Middle Fusion (Configuration B)** achieved the best ove
 
 ### Fréchet Inception Distance (FID)
 Lower FID indicates higher-quality generated images.  
-The final FiLM-based model achieves the lowest FID score.
+The Early + FiLM Middle Fusion model achieves the lowest FID during training.
 
-![FID Curve](FID.png)
-
----
-
-### Validation Average Bits-Per-Dimension (BPD)
-Validation BPD steadily decreases, indicating improved likelihood estimation and generalization.
-
-![Validation BPD](val_avg_BPD.png)
+<p align="center">
+  <img src="FID.png" width="650">
+</p>
 
 ---
 
 ### Training Average Bits-Per-Dimension (BPD)
-Training BPD shows stable convergence over the training period.
+Training BPD steadily decreases, demonstrating stable convergence of the autoregressive model.
 
-![Training BPD](images/train_avg_BPD.png)
+<p align="center">
+  <img src="training_avg_BPD.png" width="650">
+</p>
 
+---
+
+### Validation Average Bits-Per-Dimension (BPD)
+Validation BPD closely follows training trends, indicating good generalization.
+
+<p align="center">
+  <img src="images/val_avg_BPD.png" width="650">
+</p>
+
+---
+
+### Test Average Bits-Per-Dimension (BPD)
+Test BPD confirms that the trained conditional PixelCNN++ generalizes well to unseen data.
+
+<p align="center">
+  <img src="BPD.png" width="650">
+</p>
 
 ---
 
